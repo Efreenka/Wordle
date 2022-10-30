@@ -19,7 +19,7 @@ def filter_words_with_length(words, length):
     return correct_words
 
 
-def wwite_words_to_file(words, filename):
+def write_words_to_file(words, filename):
     with open(filename, mode="w", encoding='utf-8') as file: 
         for word in words:
             print(word, file=file)             
@@ -27,5 +27,5 @@ def wwite_words_to_file(words, filename):
 
 if __name__ == "__main__":
     words = load_words("../data/czech_nouns.txt")
-    words_filtered = filter_words_with_length(words, 6)
-    wwite_words_to_file(words_filtered, "../data/game_words.txt")
+    words_filtered = filter_words_with_length(words, 5)
+    write_words_to_file(words_filtered, "../data/game_words.txt")
