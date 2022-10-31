@@ -51,7 +51,6 @@ def wordle():
     print("Ahoj, vítej ve hře worlde by Efree :)")
     all_words = preprocess.load_words("../data/game_words.txt")
     correct_word = random.choice(all_words)
-    print(correct_word)
     
     guess = ""
     while guess != correct_word:
